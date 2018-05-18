@@ -1,0 +1,104 @@
+{
+  "project": {
+    "app_path" : "app/src/main/java/com/example/santiago/test_samplers",
+    "package_name" : "com.example.santiago.test_samplers"
+  } ,
+
+  "application": {
+    "title" : "Samplers Hello World App",
+    "welcomeMessage" : "Welcome to your first Samplers App!",
+    "networkConfiguration" : {
+      "url" : "http://192.168.0.10/samplers/upload.php",
+      "paramName" : "sample",
+      "paramNameUserId" : "user_id",
+      "paramNameAuthenticationType" : "authentication_type"
+
+    },
+    "authenticationEnabled" : true,
+    "authenticationOptional" : true,
+    "googleMaps_API_KEY" : "AIzaSyBSdAX453WDiPJmPotF5akUQNQw_W_MzJ4",
+    "mainHelpFileName" : "mainhelp.html"
+  } ,
+
+  "workflow": {
+    "actionLabel" : "Take a sample",
+    "steps": [
+        {
+          "id":1,
+          "type" : "Information",
+          "text" : "Please, follow the instructions",
+          "nextStepId": 2
+        },
+        {
+          "id" : 2,
+          "type": "SelectOne",
+          "title" : "Select one",
+          "options" : [
+            {
+              "id":1,
+              "text":"Tiburones",
+              "nextStepId": 3
+            },
+            {
+              "id":2,
+              "text":"Rayas",
+              "nextStepId": 3
+            },
+            {
+              "id":3,
+              "text":"Restos/huevos",
+              "nextStepId": 3
+            }
+          ]
+        },
+        {
+          "id" : 3,
+          "type" : "Photo",
+          "text" : "Tomar foto del cuerpo entero del especimen",
+          "nextStepId": 2,
+          "helpFileName" : "photohelp.html"
+        },
+        {
+          "id" : 4,
+          "type": "SelectOne",
+          "title" : "Select one",
+          "options" : [
+            {
+              "id":1,
+              "text":"Tomar foto de la cabeza del especimen",
+              "nextStepId": 5
+            },
+            {
+              "id":2,
+              "text":"Omitir",
+              "nextStepId": 6
+            }
+          ]
+        },
+        {
+          "id" : 5,
+          "type" : "Photo",
+          "text" : "Tomar foto de la cabeza del especimen",
+          "nextStepId": 6,
+          "optional" : true,
+          "helpFileName" : "photohelp.html"
+        },
+        {
+          "id" : 6,
+          "type" : "InsertText",
+          "text" : "Inserte el tamaño del especimen en centimetros.",
+          "sampleText" : "peso",
+          "inputType" : "text",
+          "maxLength" : 3,
+          "optional" : true,
+          "nextStepId" : 7
+        },
+        {
+          "id":7,
+          "type" : "Location",
+          "text" : "Por favor, ingrese su ubicacion",
+          "helpFileName" : "locationhelp.html"
+        }
+    ]
+  }
+}
