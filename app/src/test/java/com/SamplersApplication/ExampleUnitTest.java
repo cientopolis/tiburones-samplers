@@ -1,4 +1,4 @@
-package com.example.santiago.test_samplers;
+package com.SamplersApplication;
 
 import org.junit.Test;
 

@@ -1,12 +1,12 @@
 {
   "project": {
-    "app_path" : "app/src/main/java/com/example/santiago/test_samplers",
-    "package_name" : "com.example.santiago.test_samplers"
+    "app_path" : "app/src/main/java/com/SamplersApplication",
+    "package_name" : "com.SamplersApplication"
   } ,
 
   "application": {
-    "title" : "Samplers Hello World App",
-    "welcomeMessage" : "Welcome to your first Samplers App!",
+    "title" : "Muestras test",
+    "welcomeMessage" : "Bienvenido a *insert application name*!",
     "networkConfiguration" : {
       "url" : "http://192.168.0.10/samplers/upload.php",
       "paramName" : "sample",
@@ -21,18 +21,18 @@
   } ,
 
   "workflow": {
-    "actionLabel" : "Take a sample",
+    "actionLabel" : "Tome una muestra",
     "steps": [
         {
           "id":1,
           "type" : "Information",
-          "text" : "Please, follow the instructions",
+          "text" : "Por favor siga las inr=trucciones",
           "nextStepId": 2
         },
         {
           "id" : 2,
           "type": "SelectOne",
-          "title" : "Elija una",
+          "title" : "Seleccione una opcion",
           "options" : [
             {
               "id":1,
@@ -61,7 +61,7 @@
         {
           "id" : 4,
           "type": "SelectOne",
-          "title" : "Select one",
+          "title" : "Seleccione una opcion",
           "options" : [
             {
               "id": 1,
@@ -80,7 +80,6 @@
           "type" : "Photo",
           "text" : "Tomar foto de la cabeza del especimen",
           "nextStepId": 6,
-          "optional" : true,
           "helpFileName" : "photohelp.html"
         },
         {

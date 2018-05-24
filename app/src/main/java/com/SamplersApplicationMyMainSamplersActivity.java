@@ -1,4 +1,4 @@
-package com.example.santiago.test_samplers;
+package com.SamplersApplication.;
 
 import android.os.Bundle;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import org.cientopolis.samplers.framework.soundRecord.*;
 import org.cientopolis.samplers.framework.route.*;
 import org.cientopolis.samplers.authentication.AuthenticationManager;
 
-public class test_samplersMyMainSamplersActivity extends SamplersMainActivity {
+public class SamplersApplicationMyMainSamplersActivity extends SamplersMainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
