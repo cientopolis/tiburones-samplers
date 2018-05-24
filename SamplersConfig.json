@@ -32,7 +32,7 @@
         {
           "id" : 2,
           "type": "SelectOne",
-          "title" : "Select one",
+          "title" : "Elija una",
           "options" : [
             {
               "id":1,
@@ -55,7 +55,7 @@
           "id" : 3,
           "type" : "Photo",
           "text" : "Tomar foto del cuerpo entero del especimen",
-          "nextStepId": 2,
+          "nextStepId": 4 ,
           "helpFileName" : "photohelp.html"
         },
         {
@@ -64,12 +64,12 @@
           "title" : "Select one",
           "options" : [
             {
-              "id":1,
+              "id": 1,
               "text":"Tomar foto de la cabeza del especimen",
               "nextStepId": 5
             },
             {
-              "id":2,
+              "id": 2,
               "text":"Omitir",
               "nextStepId": 6
             }
@@ -87,7 +87,7 @@
           "id" : 6,
           "type" : "InsertText",
           "text" : "Inserte el tamaño del especimen en centimetros.",
-          "sampleText" : "peso",
+          "sampleText" : "Ej: 123",
           "inputType" : "text",
           "maxLength" : 3,
           "optional" : true,
