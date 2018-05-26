@@ -53,7 +53,7 @@ task samplers_config {
     def raw_path = "app/src/main/res/raw/"
 
     // Check if exists MAIN ACTIVITY
-    File main_activity_file = new File(app_path+"MyMainSamplersActivity.java")
+    File main_activity_file = new File(app_path+"SamplersApplication.java")
     if (!main_activity_file.exists()) {
 
 
@@ -142,7 +142,7 @@ task samplers_config {
 
         }
 
-        def activity_name = "MyMainSamplersActivity"
+        def activity_name = "SamplersApplication"
         def welcomeMessage = json.application.welcomeMessage
         def net_config_url = json.application.networkConfiguration.url
         def net_config_paramName = json.application.networkConfiguration.paramName
@@ -160,7 +160,7 @@ task samplers_config {
         class_generator.generateMainActivity(app_path, activity_name, welcomeMessage, net_config)
     }
     else {
-        println "MyMainSamplersActivity.java already exists."
+        println "SamplersApplication.java already exists."
     }
 
 

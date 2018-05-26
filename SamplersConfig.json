@@ -1,7 +1,7 @@
 {
   "project": {
-    "app_path" : "app/src/main/java/com/SamplersApplication",
-    "package_name" : "com.SamplersApplication"
+    "app_path" : "app/src/main/java/com/SamplersApplication/",
+    "package_name" : "SamplersApplication"
   } ,
 
   "application": {

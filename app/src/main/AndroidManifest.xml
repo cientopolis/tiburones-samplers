@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.SamplersApplication">
-
-    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme"><meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBSdAX453WDiPJmPotF5akUQNQw_W_MzJ4"/><activity android:label="@string/app_name" android:name=".test_samplersMyMainSamplersActivity" android:theme="@style/SamplersFrameworkAppTheme"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity><activity android:label="@string/app_name" android:name="MyMainSamplersActivity" android:theme="@style/SamplersFrameworkAppTheme"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity></application>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBSdAX453WDiPJmPotF5akUQNQw_W_MzJ4"/>
+            <activity android:label="@string/app_name" android:name=".test_samplersSamplersApplication" android:theme="@style/SamplersFrameworkAppTheme">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+                </intent-filter>
+            </activity>
+            <activity android:label="@string/app_name" android:name="SamplersApplication" android:theme="@style/SamplersFrameworkAppTheme">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+                </intent-filter>
+            </activity>
+    </application>
 </manifest>
