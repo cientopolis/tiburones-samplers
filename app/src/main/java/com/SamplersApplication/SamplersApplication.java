@@ -17,7 +17,6 @@ import org.cientopolis.samplers.framework.soundRecord.*;
 import org.cientopolis.samplers.framework.route.*;
 import org.cientopolis.samplers.authentication.AuthenticationManager;
 
-
 public class SamplersApplication extends SamplersMainActivity {
 
     @Override
@@ -29,14 +28,14 @@ public class SamplersApplication extends SamplersMainActivity {
         NetworkConfiguration.setPARAM_NAME_AUTHENTICATION_TYPE("authentication_type");
         AuthenticationManager.setAuthenticationEnabled(true);
         AuthenticationManager.setAuthenticationOptional(true);
-        String welcomeMessage = getResources().getString(R.string.welcomeMessage);
+        String welcomeMessage = getResources().getString(R.string.welcomeMessage); 
         lb_main_welcome_message.setText(welcomeMessage);
     }
 
     @Override
     protected Workflow getWorkflow() {
         Workflow workflow = new Workflow();
-    String textToShow0 = getResources().getString(R.string.textToShow0);
+    String textToShow0 = getResources().getString(R.string.textToShow0); 
     InformationStep step0 = new InformationStep(1,textToShow0,2); 
     workflow.addStep(step0); 
     String selectOneTitle1 = getResources().getString(R.string.selectOneTitle1); 
