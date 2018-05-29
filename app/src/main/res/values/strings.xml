@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
-    <string name="app_name">test-samplers</string>
-<string name="welcomeMessage">Welcome to your first Samplers App!</string>
-    <string name="textToShow0">Please, follow the instructions</string><string name="selectOneTitle1">Elija una</string><string name="selectOneOptionText1_0">Tiburones</string><string name="selectOneOptionText1_1">Rayas</string><string name="selectOneOptionText1_2">Restos/huevos</string><string name="photoInstructions2">Tomar foto del cuerpo entero del especimen</string><string name="selectOneTitle3">Select one</string><string name="selectOneOptionText3_0">Tomar foto de la cabeza del especimen</string><string name="selectOneOptionText3_1">Omitir</string><string name="photoInstructions4">Tomar foto de la cabeza del especimen</string><string name="textToShowInsertText5">Inserte el tamaño del especimen en centimetros.</string><string name="sampleTextInsertText5">Ej: 123</string><string name="textToShowLocation6">Por favor, ingrese su ubicacion</string></resources>
+    <string name="app_name">Samplers</string>
+<string name="welcomeMessage">Bienvenido a samplers</string>
+    <string name="textToShow0">Por favor siga las instrucciones</string>
+    <string name="selectOneTitle1">Elija una</string>
+    <string name="selectOneOptionText1_0">Tiburones</string>
+    <string name="selectOneOptionText1_1">Rayas</string>
+    <string name="selectOneOptionText1_2">Restos/huevos</string>
+    <string name="photoInstructions2">Tomar foto del cuerpo entero del especimen</string>
+    <string name="selectOneTitle3">Select one</string>
+    <string name="selectOneOptionText3_0">Tomar foto de la cabeza del especimen</string>
+    <string name="selectOneOptionText3_1">Omitir</string>
+    <string name="photoInstructions4">Tomar foto de la cabeza del especimen</string>
+    <string name="textToShowInsertText5">Inserte el tamaño del especimen en centimetros.</string>
+    <string name="sampleTextInsertText5">Ej: 123</string>
+    <string name="textToShowLocation6">Por favor, ingrese su ubicacion</string>
+</resources>
