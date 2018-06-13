@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
     <string name="app_name">Samplers</string>
-<string name="welcomeMessage">Bienvenido a samplers</string>
+    <string name="welcomeMessage">Bienvenido a samplers</string>
     <string name="textToShow0">Por favor siga las instrucciones</string>
     <string name="selectOneTitle1">Elija una</string>
     <string name="selectOneOptionText1_0">Tiburones</string>
