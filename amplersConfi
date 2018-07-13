@@ -26,7 +26,7 @@
         {
           "id":1,
           "type" : "Information",
-          "text" : "Por favor siga las instrucciones",
+          "text" : "Por favor siga las inr=trucciones",
           "nextStepId": 2
         },
         {
@@ -47,7 +47,7 @@
             {
               "id":3,
               "text":"Restos/huevos",
-              "nextStepId": 4
+              "nextStepId": 3
             }
           ]
         },
@@ -55,52 +55,45 @@
           "id" : 3,
           "type" : "Photo",
           "text" : "Tomar foto del cuerpo entero del especimen",
-          "nextStepId": 5 ,
+          "nextStepId": 4 ,
           "helpFileName" : "photohelp.html"
         },
         {
           "id" : 4,
-          "type" : "Photo",
-          "text" : "Tomar de los restos/huevos",
-          "nextStepId": 8,
-          "helpFileName" : "photohelp.html"
-        },
-        {
-          "id" : 5,
           "type": "SelectOne",
           "title" : "Seleccione una opcion",
           "options" : [
             {
               "id": 1,
               "text":"Tomar foto de la cabeza del especimen",
-              "nextStepId": 6
+              "nextStepId": 5
             },
             {
               "id": 2,
               "text":"Omitir",
-              "nextStepId": 7
+              "nextStepId": 6
             }
           ]
         },
         {
-          "id" : 6,
+          "id" : 5,
           "type" : "Photo",
           "text" : "Tomar foto de la cabeza del especimen",
-          "nextStepId": 7,
+          "nextStepId": 6,
           "helpFileName" : "photohelp.html"
         },
         {
-          "id" : 7,
+          "id" : 6,
           "type" : "InsertText",
           "text" : "Inserte el tamaño del especimen en centimetros.",
           "sampleText" : "Ej: 123",
-          "inputType" : "number",
+          "inputType" : "text",
           "maxLength" : 3,
           "optional" : true,
-          "nextStepId" : 8
+          "nextStepId" : 7
         },
         {
-          "id":8,
+          "id":7,
           "type" : "Location",
           "text" : "Por favor, ingrese su ubicacion",
           "helpFileName" : "locationhelp.html"

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
     <string name="app_name">Samplers</string>
     <string name="welcomeMessage">Bienvenido a samplers</string>
     <string name="textToShow0">Por favor siga las instrucciones</string>
@@ -15,4 +14,4 @@
     <string name="textToShowInsertText5">Inserte el tamaño del especimen en centimetros.</string>
     <string name="sampleTextInsertText5">Ej: 123</string>
     <string name="textToShowLocation6">Por favor, ingrese su ubicacion</string>
-</resources>
+<string name="photoInstructions3">Tomar de los restos/huevos</string><string name="selectOneTitle4">Seleccione una opcion</string><string name="selectOneOptionText4_0">Tomar foto de la cabeza del especimen</string><string name="selectOneOptionText4_1">Omitir</string><string name="photoInstructions5">Tomar foto de la cabeza del especimen</string><string name="textToShowInsertText6">Inserte el tamaño del especimen en centimetros.</string><string name="sampleTextInsertText6">Ej: 123</string><string name="textToShowLocation7">Por favor, ingrese su ubicacion</string></resources>
