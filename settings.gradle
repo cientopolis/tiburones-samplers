@@ -1,1 +1,1 @@
-include ':app', ':samplersFramework', ':samplersclassgenerator'
+include ':app', ':samplersFramework'
