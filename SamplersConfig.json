@@ -1,0 +1,144 @@
+{
+  "project": {
+    "app_path" : "app/src/main/java/cientopolis/samplers/",
+    "package_name" : "cientopolis.samplers"
+  } ,
+
+  "application": {
+    "title" : "Muestras test",
+    "welcomeMessage" : "Bienvenido a Samplers",
+    "networkConfiguration" : {
+      "url" : "http://192.168.0.10/samplers/upload.php",
+      "paramName" : "sample",
+      "paramNameUserId" : "user_id",
+      "paramNameAuthenticationType" : "authentication_type"
+
+    },
+    "authenticationEnabled" : false,
+    "authenticationOptional" : true,
+    "googleMaps_API_KEY" : "AIzaSyBSdAX453WDiPJmPotF5akUQNQw_W_MzJ4",
+    "mainHelpFileName" : "mainhelp.html"
+  } ,
+
+  "workflow": {
+    "actionLabel" : "Vamos a tomar una muestra!",
+    "steps": [
+        {
+          "id":1,
+          "type" : "Information",
+          "text" : "Seguí las instrucciones",
+          "nextStepId": 2
+        },
+        {
+          "id" : 2,
+          "type": "SelectOne",
+          "title" : "Selecciona sobre que va a ser la muestra",
+          "options" : [
+            {
+              "id":1,
+              "text":"Tiburones",
+              "nextStepId": 3
+            },
+            {
+              "id":2,
+              "text":"Rayas",
+              "nextStepId": 4
+            },
+            {
+              "id":3,
+              "text":"Restos/huevos",
+              "nextStepId": 5
+            }
+          ]
+        },
+        {
+          "id" : 3,
+          "type" : "Photo",
+          "text" : "Toma una foto del cuerpo entero del tiburon",
+          "nextStepId": 6 ,
+          "helpFileName" : "photohelp.html"
+        },
+        {
+          "id" : 4,
+          "type" : "Photo",
+          "text" : "Toma una foto del cuerpo entero de la raya",
+          "nextStepId": 8,
+          "helpFileName" : "photohelp.html"
+        },
+        {
+          "id" : 5,
+          "type" : "Photo",
+          "text" : "Toma una foto de los restos/huevos",
+          "nextStepId": 10 ,
+          "helpFileName" : "photohelp.html"
+        },
+        {
+          "id" : 6,
+          "type": "SelectOne",
+          "title" : "Selecciona una opcion",
+          "options" : [
+            {
+              "id": 1,
+              "text":"Tomar foto de la cabeza del especimen",
+              "nextStepId": 7
+            },
+            {
+              "id": 2,
+              "text":"Omitir",
+              "nextStepId": 8
+            }
+          ]
+        },
+        {
+          "id" : 7,
+          "type" : "Photo",
+          "text" : "Toma una foto de la cabeza del especimen",
+          "nextStepId": 8,
+          "helpFileName" : "photohelp.html"
+        },
+        {
+          "id" : 8,
+          "type" : "InsertText",
+          "text" : "¿Que tamaño tiene el especimen?(en cm)",
+          "sampleText" : "Ej: 123",
+          "inputType" : "number",
+          "maxLength" : 3,
+          "optional" : true,
+          "nextStepId" : 9
+        },
+        {
+          "id":9,
+          "type" : "Location",
+          "text" : "Ingresa tu ubicacion para completar la muestra!",
+          "helpFileName" : "locationhelp.html"
+        },
+        {
+          "id" : 10,
+          "type": "SelectOne",
+          "title" : "Ayudanos a saber mas sobre tu foto!",
+          "options" : [
+            {
+              "id": 1,
+              "text":"Restos de tiburon",
+              "nextStepId": 9
+            },
+            {
+              "id": 2,
+              "text":"Restos de raya",
+              "nextStepId": 9
+            },
+            {
+              "id": 3,
+              "text":"Huevos de tiburon",
+              "nextStepId": 9
+            },
+            {
+              "id": 4,
+              "text":"Huevos de raya",
+              "nextStepId": 9
+            }
+          ]
+        }
+    ]
+  }
+}
